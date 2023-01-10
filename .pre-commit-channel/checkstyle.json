@@ -5,7 +5,7 @@
     "central"
   ],
   "dependencies": [
-    "com.puppycrawl.tools:checkstyle2:latest.stable"
+    "com.puppycrawl.tools:checkstyle:latest.stable"
   ],
   "properties": {
     "jna.nosys": "true",
