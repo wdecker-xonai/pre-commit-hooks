@@ -7,6 +7,7 @@
   "dependencies": [
     "com.puppycrawl.tools:checkstyle:latest.stable"
   ],
+  "launcherType": "graalvm-native-image",
   "properties": {
     "jna.nosys": "true",
     "MILL_CLASSPATH": "${java.class.path}",
