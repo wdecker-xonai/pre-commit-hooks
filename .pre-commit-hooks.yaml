@@ -1,0 +1,7 @@
+- id: checkstyle
+  name: checkstyle
+  description: "Runs the Checkstyle static code analysis tool."
+  language: coursier
+  entry: checkstyle
+  files: \.java$
+  require_serial: true
