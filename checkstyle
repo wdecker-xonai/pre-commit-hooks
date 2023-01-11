@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cs="$(./resolve_coursier)"
+$cs launch \
+  --jvm=zulu:1.17 \
+  -M com.puppycrawl.tools.checkstyle.Main \
+  com.puppycrawl.tools:checkstyle:10.6.0 -- "$@"

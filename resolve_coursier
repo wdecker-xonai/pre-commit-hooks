@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ "$(which cs)" ]; then
+  echo "cs"
+elif [ "$(which coursier)" ]; then
+  echo "coursier"
+else
+  echo "Please install coursier"
+  exit 1
+fi
