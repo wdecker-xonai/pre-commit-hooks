@@ -1,7 +1,7 @@
 - id: checkstyle
   name: checkstyle
   description: "Runs the Checkstyle static code analysis tool."
-  language: coursier
-  entry: checkstyle
+  language: system #coursier language doesn't support changing jvm version. Checkstyle doesn't work on java 8
+  entry: ./checkstyle
   files: \.java$
   require_serial: true
